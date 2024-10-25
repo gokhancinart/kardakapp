@@ -1,0 +1,28 @@
+{
+  "header" : {
+    "nav_home": "Home",
+    "nav_about": "About",
+    "nav_product": "Product",
+    "nav_contact": "Contact"
+  },
+  "homepage": {
+    "title": "Welcome to Kardak",
+    "description": "We provide innovative solutions for your business.",
+    "promo_title": "Durable and Reliable",
+    "promo_title_span": "Cardboard Cups",
+    "promo_description": "Our cardboard cups are designed to present your drinks in the best possible way."
+  },
+  "footer": {
+    "reserved": "All rights reserved."
+  },
+  "home_about_title" : "Everything you need for your paper cup production!",
+  "home_about_description" : "From high-quality paper sales to professional cup printing and finished cup production. We take every step to bring your designs to life, delivering the best results for your business.",
+  "home_about_step1_title" : "Paper Supply",
+  "home_about_step1_description" : "The right address for your high-quality paper needs! We supply paper that supports your production processes with durable, eco-friendly, and various grammage options suitable for every need.",
+  "home_about_step2_title" : "Printing Services",
+  "home_about_step2_description" : "We reflect your designs in the best way with our professional printing services. We make your cups special to your brand with high-quality printing techniques.",
+  "home_about_step3_title" : "Cup Production",
+  "home_about_step3_description" : "In our finished cup production process, we produce your cups in accordance with quality and hygiene standards. We offer the best results with cup sizes and designs suitable for your needs.",
+  "home_about_step4_title" : "Fast and Reliable Delivery",
+  "home_about_step4_description" : "Speed and reliability are our priorities at every stage from production to delivery. By delivering your orders to you on time and complete, we speed up your business processes."
+}
