@@ -3,8 +3,8 @@ import { useRouter } from 'next/router';
 const LanguageSwitcher = () => {
   const router = useRouter();
 
-  const changeLanguage = (locale) => {
-    router.push(router.pathname, router.asPath, { locale }); // Dili değişimi
+  const changeLanguage = (lang) => {
+    router.push(router.pathname, router.asPath, { locale: lang });
   };
 
   return (

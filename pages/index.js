@@ -1,4 +1,3 @@
-
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import nextI18NextConfig from '../next-i18next.config.js';
@@ -7,13 +6,11 @@ import PromoVideo from '../components/PromoVideo';
 import Head from 'next/head';
 import HomeAbout from '@/components/HomeAbout.js';
 
-//Papercup video
 const videoUrl = "/assets/videos/papercup.mp4";
 
 const HomePage = () => {
-
   const { t } = useTranslation('common');
-  
+
   return (
     <>
       <Head>
@@ -38,10 +35,15 @@ const HomePage = () => {
   );
 };
 
-export const getStaticProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ['common'], nextI18NextConfig)),
-  },
-});
+// Statik olarak sayfa oluşturma
+export const getStaticProps = async ({ locale }) => {
+  const translations = await serverSideTranslations(locale, ['common'], nextI18NextConfig);
+  
+  return {
+    props: {
+      ...translations,
+    },
+  };
+};
 
 export default HomePage;
