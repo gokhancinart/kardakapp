@@ -9,10 +9,10 @@ function HomeAbout() {
   const { t } = useTranslation('common')
   return (
     <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-blue">Kardak</h2>
-          <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">
+      <div className="mx-auto max-w-7xl sm:px-8">
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="text-base font-semibold leading-7 text-blue">Kardak</p>
+          <p className="mt-2 text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">
             {t('home_about_title')}
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">

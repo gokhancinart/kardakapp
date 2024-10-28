@@ -28,7 +28,7 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <div className="hidden md:flex space-x-8 font-bold [&>a]:py-2 [&>a]:px-2 [&>a:hover]:text-blue [&>a:hover]:border-blue [&>a]:transition-all [&>a]:duration-300">
+        <div className="hidden md:flex space-x-8 font-bold [&>a]:py-2 [&>a]:mx-2 [&>a:hover]:text-blue [&>a:hover]:border-blue [&>a]:transition-all [&>a]:duration-300">
           <Link 
             href="/" 
             className={

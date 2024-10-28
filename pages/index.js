@@ -5,8 +5,10 @@ import Layout from '../components/Layout';
 import PromoVideo from '../components/PromoVideo';
 import Head from 'next/head';
 import HomeAbout from '@/components/HomeAbout.js';
+import TrustedCompanies from '@/components/TrustedCompanies.js';
 
 const videoUrl = "/assets/videos/papercup.mp4";
+
 
 const HomePage = () => {
   const { t } = useTranslation('common');
@@ -22,12 +24,23 @@ const HomePage = () => {
       </Head>
       <Layout headerPosition="fixed">
         <PromoVideo 
-          videoUrl={videoUrl} 
-          title={t('homepage.promo_title')}
-          title2={t('homepage.promo_title_span')}
-          description={t('homepage.promo_description')}
+          videoUrl={ `/assets/videos/papercup.mp4` } 
+          title={ t('homepage.promo_title') }
+          title2={ t('homepage.promo_title_span') }
+          description={ t('homepage.promo_description') }
         />
         <div className="container mx-auto">
+        <TrustedCompanies 
+            title={ t('homepage.trusted_companies_title') }
+            images={[
+              { src: "/assets/images/trustedcompanies/transistor.svg", alt: "Transistor" },
+              { src: "/assets/images/trustedcompanies/tuple.svg", alt: "Tuple" },
+              { src: "/assets/images/trustedcompanies/statickit.svg", alt: "StaticKit" },
+              { src: "/assets/images/trustedcompanies/mirage.svg", alt: "Mirage" },
+              { src: "/assets/images/trustedcompanies/laravel.svg", alt: "Laravel" },
+              { src: "/assets/images/trustedcompanies/statamic.svg", alt: "Statamic" },
+            ]}
+          />
           <HomeAbout />
         </div>
       </Layout>
